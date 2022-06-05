@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(71, 1, 62);
+    font-family: sans-serif;
+}
+h1{
+    color: rgb(169, 253, 0);
+    text-align: center;
+    border: 10px solid rgb(126, 16, 111); 
+    
+}
+.codigo{
+    width: 60px;
+    margin: 0;
+    height: 25px;
+    font-size: 4.2vw;
+}
+.acciones{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+.acciones>button{
+    border: 5px solid rgb(126, 16, 111);
+    background-color:rgb(71, 1, 62);
+    font-size: 4.2vw;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+#volver{
+    border: 5px solid rgb(126, 16, 111);
+    background-color:rgb(71, 1, 62);
+    font-size: 4.2vw;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+
+#ver{
+    border: 5px solid rgb(226, 185, 2);
+}
+
+.acciones>label{
+    color: white;
+    font-size: 4.2vw;
+}
+.partida{
+    border: 2px solid rgb(169, 253, 0);
+    color: white;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+h4{
+    margin: 0;
+    text-align: center;
+}
+.mensaje{
+    text-align: center;
+    color:rgb(169, 253, 0); ;
+}
+
+@media (min-width: 600px) {
+    
+    .acciones{
+        max-width: 600px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .acciones>label{
+        color: white;
+        font-size: 30px;
+    }
+
+    .acciones>button{
+        
+        font-size: 30px;
+       
+    }
+
+    #volver{
+        
+        font-size: 30px;
+        
+    }
+
+    .partida{
+        font-size: 20px;
+        margin:0px 200px 5px;
+    }
+
+    .codigo{
+        width: 60px;
+        margin: 0;
+        height: 25px;
+        font-size: 20PX;
+    }
+
+  }

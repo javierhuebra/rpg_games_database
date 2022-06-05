@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>LoW</title>
+
+
+</head>
+<body>
+    <div class="container">
+        <img src="./img/header.png" class="header" alt="" srcset="">
+        
+        <div class="flex-box2">
+            <div class="flex-item" id="mono0"></div>
+            <div class="flex-item" id="mono1"></div>
+            <div class="flex-item" id="mono2"></div>
+        </div>
+       
+        <div class="botones">
+            <button id="sumar">+</button>
+            <button id="turnos">Definir turnos</button>
+            <button id="registrar">Registrar resultados</button>
+            <a href="estadisticas.html"><button id="ver-estadisticas">Ver estadisticas</button></a>
+        </div>
+       
+        <div class="formulario-escondido">
+            <div class="para-eliminar-facil">
+                <form class="formulario">
+                    <div class="contenedor-input" id="agregado0">
+                        <!-- <div class="img-datos" id="img-mono0"></div>
+                        <input class="texto" type="text" id="texto0"> -->
+                    </div>
+                    
+                    <div class="contenedor-input" id="agregado1">
+                     <!-- <div class="img-datos" id="img-mono1"></div>
+                     <input class="texto" type="text"> -->
+                     </div>
+                     
+                     <div class="contenedor-input" id="agregado2">
+                         <!-- <div class="img-datos" id="img-mono2"></div>
+                         <input class="texto" type="text"> -->
+                     </div>
+                     <div class="contenedor-input" id="agregado3"></div>
+                     <div class="contenedor-input" id="agregado4"></div>
+                     <div class="contenedor-input">
+                         <label for="">ID GRUPO:</label>
+                        <input class="texto" id="id-grupo" type="text">
+                     </div>
+                     </form>
+                 <input class="enviar-datos" type="submit" value="registrar">
+             </div>
+            </div>
+            
+        
+        
+    </div>
+
+   <script>
+    cantidad_de_players= 3;    
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="./scripts/guardar.js"></script>
+    <script src="./scripts/configuracion.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+
+</html>

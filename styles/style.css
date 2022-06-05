@@ -1,0 +1,378 @@
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: rgb(71, 1, 62);
+}
+
+.container{
+
+   background-image:linear-gradient(
+       0deg,
+       rgba(0,0,0,0.4),
+       rgba(0,0,0,0.3)
+       ), url("../img/background.png");
+   background-position: center;
+   background-repeat:no-repeat;
+   display: flex;
+   flex-direction: column;
+   justify-content:flex-start;
+   align-items: center;
+   background-size:cover;
+   height: 200vw;
+   width: auto;
+   margin: auto auto;
+   position: relative;
+   
+  
+ }
+
+ .header{
+    
+    background-size: contain;
+    
+    margin: 25px;
+    width: 95vw;
+    height: 50vw;
+    filter: drop-shadow(0px 0px 105px rgb(0, 0, 0));
+ }
+ 
+ .flex-box2{
+     margin: 0px;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(0, 0, 0, 0.411);
+     border: 2vw solid rgb(129, 3, 113);
+     border-radius: 20px;
+     padding: 20px;
+    
+}
+ 
+ .flex-item{
+     filter: drop-shadow(0px 0px 5px rgb(0, 0, 0));
+     border-radius: 15px;
+     width: 20vw;
+     height: 20vw;
+     margin: 5px;
+    box-shadow: 0px 0px 15px rgb(0, 0, 0); 
+      background-color: rgba(226, 43, 226, 0.247); 
+     color: transparent;
+     -webkit-text-stroke: 3px rgb(255, 251, 4);
+     border: 2vw solid rgb(129, 3, 113);
+    
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     font-size: 12vw;
+     font-weight: 800;
+    
+}
+.numero-flex{
+    text-align: center;
+    width: 20vw;
+    padding: 0;
+     margin: 5px;
+     font-size: 15vw;
+     font-weight: 700;
+}
+ #mono0{
+     background-image: url("../img/monigote_black.png");
+     background-size: contain;
+
+     
+ }
+ #mono1{
+    background-image: url("../img/monigote_red.png");
+    background-size: contain;
+}
+#mono2{
+    background-image: url("../img/monigote_green.png");
+    background-size: contain;
+}
+#mono3{
+    background-image: url("../img/monigote_blue.png");
+    background-size: contain;
+    
+}
+#mono4{
+    background-image: url("../img/monigote_yellow.png");
+    background-size: contain;
+    
+}
+
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+button{
+    font-size: 5vw;
+    padding: 3vw 10vw;
+    border-radius: 50px;
+    margin: 1vw 0px;
+    background-color: rgb(129, 3, 113);
+    border: none;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0px 0px 25px black;
+}
+
+
+@keyframes ganador {
+   0%{
+    box-shadow: 0px 0px 15px rgb(8, 8, 8);
+    
+    background-color: rgba(226, 43, 226, 0.247);
+   } 
+   20%{
+    box-shadow: 0px 0px 45px yellow;
+    text-shadow: 0px 0px 45px yellow;
+    background-color: rgba(255, 255, 0, 0.39);
+    border: 2vw solid yellow;
+   }
+   100%{
+    box-shadow: 0px 0px 15px rgb(8, 8, 8);
+    text-shadow: 0px 0px 15px rgba(8, 8, 8, 0.548);
+    background-color: rgba(226, 43, 226, 0.247);
+   }  
+    
+}
+@keyframes aparecer {
+    0%{
+     box-shadow: 0px 0px 15px rgb(8, 8, 8);
+     
+     background-color: rgba(226, 43, 226, 0.247);
+    } 
+    10%{
+     box-shadow: 0px 0px 85px rgb(255, 0, 234);
+     
+    
+     border: 10px solid rgb(255, 0, 234);
+    }
+    100%{
+     box-shadow: 0px 0px 15px rgb(8, 8, 8);
+    
+     background-color: rgba(226, 43, 226, 0.247);
+    }  
+}
+@keyframes aparecer2 {
+    0%{
+     
+        box-shadow: 0px 0px 85px rgb(0, 0, 0);
+     
+    
+        border: 10px solid rgb(129, 3, 113);
+     
+    } 
+    10%{
+     box-shadow: 0px 0px 85px rgb(0, 0, 0);
+     
+    
+     /* border: 10px solid rgb(255, 0, 234); */
+    }
+    100%{
+     
+        box-shadow: 0px 0px 105px rgb(255, 0, 234);
+     
+    
+        border: 10px solid rgb(129, 3, 113);
+     
+    }  
+}
+@keyframes background1 {
+    0%{
+        background-color: rgb(129, 3, 113);
+    }
+    50%{
+        background-color: rgb(221, 114, 27);
+    }
+    100%{
+        background-color: rgb(129, 3, 113);
+    }
+}
+.seleccionado{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 25px yellow;
+}
+
+.ganador{
+    animation: ganador 3s linear forwards;
+}
+.aparecer{
+    animation: aparecer 1s linear forwards;
+}
+
+.apagado{
+    background-color: black;
+}
+
+#sumar{
+    animation: background1 2s linear infinite;
+    
+    /* border: 10px solid rgb(129, 3, 113); */
+    
+    
+    /* animation: background 3s linear infinite; */
+}
+
+label{
+    display: block;
+}
+
+.formulario-escondido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 20px;
+    top:30%;
+    background-color: rgba(83, 10, 151, 0.658);
+    padding: 50px;
+    visibility: hidden;
+}
+
+.contenedor-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1vw;
+    
+   
+}
+.img-datos{
+    width: 20vw;
+    height: 20vw;
+    /* background-color: red; */
+    border: 5px solid violet;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px black;
+}
+.texto{
+    width: 30vw;
+    font-size: 2em;
+    margin: 10px;
+    box-shadow: 0px 0px 25px black;
+    border-radius: 5px;
+    
+}
+
+
+#img-mono0{
+    background-image: url("../img/monigote_black.png");
+    background-size: contain;
+}
+#img-mono1{
+    background-image: url("../img/monigote_red.png");
+    background-size: contain;
+}
+#img-mono2{
+    background-image: url("../img/monigote_green.png");
+    background-size: contain;
+}
+#img-mono3{
+    background-image: url("../img/monigote_blue.png");
+    background-size: contain;
+}
+#img-mono4{
+    background-image: url("../img/monigote_yellow.png");
+    background-size: contain;
+}
+
+.enviar-datos{
+    
+    font-size: 7vw;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin: 0px 0px 0px 0px;
+    background-color: rgb(129, 3, 113);
+    border: none;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0px 0px 0px transparent;
+    border: 5px solid orange;
+}
+.formulario-visible{
+    animation: aparecer2 1s linear forwards;
+    box-shadow: 0px 0px 15px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 20px;
+    top:10%;
+    background-color: rgb(95, 4, 83);
+    padding: 20px;
+    
+    visibility: visible;
+}
+
+h2{
+    color: white;
+}
+
+.para-eliminar-facil{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-input>label{
+    color: white;
+    font-weight: 800;
+}
+.envio-exitoso{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 600px) {
+    .texto{
+        width: 300PX;
+        font-size: 2em;
+        margin: 10px;
+        box-shadow: 0px 0px 25px black;
+        border-radius: 5px;
+        
+    }
+    .contenedor-input{
+        justify-content: center;
+    }
+    .formulario-visible{
+       
+        top:40%;
+       
+        
+        
+    }
+    .img-datos{
+        width: 100px;
+        height: 100px;
+       
+    }
+
+    .enviar-datos{
+    
+        font-size: 50px;
+        padding: 10px 20px;
+        
+        
+    }
+
+    .envio-exitoso{
+        font-size: 50px;
+        padding: 50px;
+    }
+
+    
+}

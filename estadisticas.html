@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoW-statics</title>
+    <link rel="stylesheet" href="styles/style-statics.css">
+</head>
+<body>
+    <h1>Registro de partidas</h1>
+    <div class="acciones">
+        <label for="codigo">Código de grupo:</label>
+        <input type="text" class="codigo" id="code">
+        <button id="ver">VER</button>
+        <a href="index.html"><button id="volver">Volver</button></a>
+    </div>
+    <div class="tablas"></div>
+    <div class="mensaje"></div>
+   
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="./scripts/creartablas.js"></script>
+    
+    <script src="./scripts/configuracion.js"></script>
+    
+</body>
+</html>
