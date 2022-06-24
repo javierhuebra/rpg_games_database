@@ -2,7 +2,7 @@
 // TODO: Replace the following with your app's Firebase project configuration
 // See: https://firebase.google.com/docs/web/learn-more#config-object
 const firebaseConfig = {
-    apiKey: "AIzaSyA3fMs4lP8ON565nIDB_rFzsdVqq8sU3Ig",
+    apiKey: "API KEY",
   authDomain: "primer-low-app.firebaseapp.com",
   projectId: "primer-low-app",
   storageBucket: "primer-low-app.appspot.com",
