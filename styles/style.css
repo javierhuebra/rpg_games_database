@@ -18,7 +18,7 @@ body{
    justify-content:flex-start;
    align-items: center;
    background-size:cover;
-   height: 200vw;
+   height: 100vh;
    width: auto;
    margin: auto auto;
    position: relative;
@@ -374,5 +374,4 @@ h2{
         padding: 50px;
     }
 
-    
 }
